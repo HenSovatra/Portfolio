@@ -121,6 +121,49 @@ background: -webkit-linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(112, 0, 0) 100%)
 ::-webkit-scrollbar-corner {
     background-color: transparent;
 }
+.nav { 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    text-align: center;
+  }
+  .nav-item { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  .nav-item a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .nav-item a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+  
 .nav-item{
     padding: 0 20px;
 }
