@@ -43,6 +43,7 @@ $(document).ready(function() {
   
   $(".aboutme").hide();
   $(".myimg").hide();
+$(".thisimg").hide();
   $("#skillset").hide();
   $(".skiii").hide();
   $("#web").hide();
@@ -70,12 +71,7 @@ $(document).ready(function() {
           $(".aboutme").fadeIn();
           setTimeout(function(){
             $(".myimg").fadeIn();
-          },200)
-        }
-        else{
-          $(".aboutme").fadeOut();
-          setTimeout(function(){
-            $(".myimg").fadeOut();
+		  $(".thisimg").fadeIn();
           },200)
         }
         if(scrollPosition>1.1*vh && scrollPosition<3.3*vh){
